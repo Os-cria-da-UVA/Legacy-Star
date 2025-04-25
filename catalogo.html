@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Catálogo - Legacy Star</title>
+</head>
+ 
+<body>
+    <header>
+        <div id="container">
+            <nav>
+                <a href="index.html">
+                    <img id="logo" src="img/logo-loja.png" alt="Logo">
+                </a>
+ 
+                <div id="menu-toggle">
+                    &#9776; <!-- símbolo do menu feito com utf-8 -->
+                </div>
+ 
+                <ul id="ul">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="sobre.html">Sobre</a> </li>
+                    <li> <a href="novidades.html">Novidades</a> </li>
+                    <li> <a href="catalogo.html">Catálogo</a> </li>
+                    <li> <a href="contato.html">Contato</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="container-1">
+            <h2>Importados<span>.</span></h2>
+            <div id="importados-container"></div>
+ 
+            <h2>Populares<span>.</span></h2>
+            <div id="populares-container"></div>
+ 
+            <h2>Clássicos<span>.</span></h2>
+            <div id="classicos-container"></div>
+        </div>
+    </main>
+ 
+    <section id="section-3">
+        <ul id="redes-sociais">
+       
+            <li><a href="https://www.linkedin.com/in/jonathan-maciel-aguiar-546a53359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="redes-sociais__link" target="_blank"><i class="bi bi-whatsapp"></i>Linkedin</a></li>
+               
+            <li><a href="https://github.com/isabellyvito-ria" class="redes-sociais__link" target="_blank"><i class="bi bi-github"></i>GitHub</a></li>
+               
+            <li><a href="https://www.instagram.com/eduardo_maciel9/?utm_source=ig_web_button_share_sheet" class="redes-sociais__link" target="_blank"><i class="bi bi-instagram"></i>Instagram</a></li>
+         
+            <li><a href="https://www.facebook.com/share/18sPr4NmtN/?mibextid=wwXIfr" class="redes-sociais__link" target="_blank"><i class="bi bi-facebook"></i>facebook</a></li>
+               
+        </ul>
+        </section>
+ 
+    <footer id="footer">
+        <img src="img/logo-loja.png" alt="img-footer">
+        <p>Copyright 2025 &copy;</p>
+    </footer>
+ 
+    <div id="container-2">
+        <script>
+            // Estoque de carros
+            const carros = [     // Cria uma lista (array) de objetos que representam os carros
+                {
+                    marca: "Bugatti",
+                    modelo: "Chiron",
+                    imagem: "img/Bugatti-Chiron-33-800x450-removebg-preview.png",
+                    km: "300Km",
+                    ano: "2015",
+                    preco: "$1.000.000",
+                    categoria: "importados"
+                },
+                {
+                    marca: "Chevrolet",
+                    modelo: "Onix",
+                    imagem: "img/img-onix-2.png",
+                    km: "3000Km",
+                    ano: "2015",
+                    preco: "R$95.000",
+                    categoria: "populares"
+                },
+                {
+                    marca: "Volkswagen",
+                    modelo: "Fusca",
+                    imagem: "img/img-fusca2.png",
+                    km: "82.500Km",
+                    ano: "1974",
+                    preco: "R$50.000",
+                    categoria: "classicos"
+                },
+                {
+                    marca: "Fiat",
+                    modelo: "Mobi",
+                    imagem: "img/img-mobi2.png",
+                    km: "2200Km",
+                    ano: "2019",
+                    preco: "R$80.000",
+                    categoria: "populares"
+                },
+                {
+                    marca: "Chevrolet",
+                    modelo: "Camaro SS",
+                    imagem: "img/chevrolet-camaro-2019-1280-06-removebg-preview.png",
+                    km: "5500Km",
+                    ano: "2013",
+                    preco: "R$350.000",
+                    categoria: "importados"
+                },
+                {
+                    marca: "Hyundai",
+                    modelo: "HB20",
+                    imagem: "img/img-hb20.png",
+                    km: "1000Km",
+                    ano: "2021",
+                    preco: "R$110.000",
+                    categoria: "populares"
+                },
+                {
+                    marca: "Bugatti",
+                    modelo: "Veyron",
+                    imagem: "img/Bugatti_Veyron_16.4___Frontansicht__5._April_2012__Düsseldorf-removebg-preview.png",
+                    km: "3700Km",
+                    ano: "2018",
+                    preco: "R$800.000",
+                    categoria: "importados"
+                },
+                {
+                    marca: "Mclaren",
+                    modelo: "720S",
+                    imagem: "img/mclaren_preta-removebg-preview.png",
+                    km: "4500Km",
+                    ano: "2017",
+                    preco: "R$780.000",
+                    categoria: "importados"
+                },
+                {
+                    marca: "BMW",
+                    modelo: "M8",
+                    imagem: "img/m8_branca-removebg-preview.png",
+                    km: "1000Km",
+                    ano: "2021",
+                    preco: "R$110.000",
+                    categoria: "importados"
+                },
+                {
+                    marca: "Pagani",
+                    modelo: "Zonda",
+                    imagem: "img/pagani-removebg-preview.png",
+                    km: "0Km",
+                    ano: "2024",
+                    preco: "R$1.500.000",
+                    categoria: "importados"
+                },
+                {
+                    marca: "Renault",
+                    modelo: "Kwid",
+                    imagem: "img/img-kwid.png",
+                    km: "4500Km",
+                    ano: "2017",
+                    preco: "R$78.000",
+                    categoria: "populares"
+                },
+                {
+                    marca: "Volkswagen",
+                    modelo: "Gol",
+                    imagem: "img/img-gol.png",
+                    km: "5500Km",
+                    ano: "2013",
+                    preco: "R$50.000",
+                    categoria: "populares"
+                },
+                {
+                    marca: "Peugeot",
+                    modelo: "208",
+                    imagem: "img/img-208.png",
+                    km: "3700Km",
+                    ano: "2018",
+                    preco: "R$85.000",
+                    categoria: "populares"
+                },
+                {
+                    marca: "Ford",
+                    modelo: "Maverick",
+                    imagem: "img/img-maverick2.png",
+                    km: "10000Km",
+                    ano: "1970",
+                    preco: "R$300.000",
+                    categoria: "classicos"
+                },
+                {
+                    marca: "Cadillac",
+                    modelo: "DeVille",
+                    imagem: "img/img-cadillac.png",
+                    km: "32000Km",
+                    ano: "1964",
+                    preco: "R$500.000",
+                    categoria: "classicos"
+                },
+                {
+                    marca: "Volkswagen",
+                    modelo: "Kombi",
+                    imagem: "img/img-kombi.png",
+                    km: "55000Km",
+                    ano: "1998",
+                    preco: "R$30.000",
+                    categoria: "classicos"
+                },
+                {
+                    marca: "Pontiac",
+                    modelo: "GTO",
+                    imagem: "img/img-gto-2.png",
+                    km: "20000Km",
+                    ano: "1968",
+                    preco: "R$120.000",
+                    categoria: "classicos"
+                },
+                {
+                    marca: "Chevrolet",
+                    modelo: "Impala",
+                    imagem: "img/img-impala.png",
+                    km: "42500Km",
+                    ano: "1967",
+                    preco: "R$160.000",
+                    categoria: "classicos"
+                },
+            ];
+ 
+            // Função para exibir os carros na tela
+            function exibirCarros(categoria, containerId) {
+                const container = document.getElementById(containerId); // Seleciona o container no HTML
+                container.innerHTML = "";   // Limpa o conteúdo atual do container
+ 
+                const filtrados = carros.filter(carro => carro.categoria === categoria);  //filtra os carros pela categoria escolhida
+ 
+                filtrados.forEach(carro => {
+                    const card = document.createElement("div");  // esse bloco adiciona. A imagem do carro, o nome da marca e o modelo, o km, o ano e o preço do carro
+                    card.id = "carro-card";
+                    card.innerHTML = `
+                        <img src="${carro.imagem}" alt="${carro.modelo}">
+                        <div class="carro-info">
+                            <h1><b>${carro.marca}</b></h1>
+                            <h5>modelo: ${carro.modelo}</h5>
+                            <ul>
+                                <li>${carro.km}</li>
+                                <li>${carro.ano}</li>
+                                <li class="preco">${carro.preco}</li>
+                            </ul>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            }
+ 
+            // Chama a função para exibir os carros
+            exibirCarros("importados", "importados-container");
+            exibirCarros("populares", "populares-container");
+            exibirCarros("classicos", "classicos-container");
+        </script>
+        <script>//Este codigo adiciona uma funcionalidade para um menu de navegação responsivi.
+                //Quando o elemento ID 'menu-toggle' é clicado, ele procura a tag <nav> na página.
+                    //Facilitando a navegação em dispositivos moveis.
+            document.getElementById('menu-toggle').addEventListener('click', function () {
+                const nav = document.querySelector('nav');
+                nav.classList.toggle('active');
+            });
+            //RESUMO: o codigo cria um banco de dados por categorias. Uma função exibe dinamicamente os carros de acordo com a categoria escolhida. Cada carro é mostrado com suas informações (imagem, marca, modelo, km, ano e preço). Há também um pequeno script para alternar o menu de navegação em dispositivos móveis.
+        </script>  
+    </div>
+</body>
+</html>

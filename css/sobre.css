@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+ 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black; 
+}
+
+/* css header */
+
+#container {
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #12151a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#ul {
+    display: flex;
+    align-items: center;
+
+}
+
+#ul li {
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+#ul li a:hover {
+    color: red;
+    transition: 0.3s ease;
+}
+
+#ul li a {
+    color: white;
+}
+
+/* css main */
+
+main #container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+#main-imagem {
+    width: 50%;
+    margin: 50px 20px;
+}
+
+#main-imagem img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#main-texto {
+    width: 50%;
+    color: white;
+}
+
+/* css rodapé */
+
+footer{
+    background-color: black;
+    color: #d8221a;
+    padding: 10px;
+    display: flex;
+}
+ 
+#redes-sociais {
+    list-style: none;
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    background-color: #12151a;
+    padding: 30px;
+}
+ 
+#redes-sociais a {
+    text-decoration: none;
+    color: #b59b57;
+    margin-bottom: 20px;
+}
+ 
+#footer {
+    justify-content: center;
+   align-items: center;
+   display: flex;
+}
+ 
+#footer img {
+    width: 70px;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+        color: white;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #12151a;
+        margin-top: 10px;
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #ul.show {
+        display: flex;
+    }
+
+    #ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #logo {
+        width: 100px;
+    }
+    
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-imagem, #main-texto {
+        width: 100%; 
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    #section-3 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,307 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+ }
+  
+ body {
+     font-family: 'Poppins', sans-serif;
+     background-color: black; 
+ }
+ 
+ /* css header */
+ 
+ #container {
+     max-width: 1440px;
+     padding: 0 5%;
+     margin: 0 auto;
+ }
+ 
+ header {
+     background-color: #12151a;
+ }
+ 
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ #logo {
+     width: 100px;
+     height: 100px;
+ }
+ 
+ #ul {
+     display: flex;
+     align-items: center;
+ 
+ }
+ 
+ #ul li {
+     margin: 0 35px;
+     font-size: 15px;
+ }
+
+ #ul li a:hover {
+  color: red;
+  transition: 0.3s ease;
+}
+ 
+ #ul li a {
+     color: white;
+ }
+ 
+ /* css main */
+ 
+ main #container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 20px 40px;
+  background-color: black;
+  gap: 20px; 
+}
+
+#main-texto {
+  color: white;
+  max-width: 50%;
+  text-align: left;
+}
+
+#main-texto h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+#main-texto h2 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+#main-imagem {
+  max-width: 50%;
+}
+
+#main-imagem img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+
+  #menu-toggle {
+    display: block;
+    color: white;
+}
+
+nav {
+    flex-direction: column;
+    align-items: center;
+}
+
+#ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #12151a;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#ul.show {
+    display: flex;
+}
+
+#ul li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#logo {
+    width: 100px;
+}
+
+  #main-texto,
+  #main-imagem {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #main-texto h1 {
+    font-size: 36px;
+  }
+
+  #main-texto h2 {
+    font-size: 18px;
+  }
+
+  #main-imagem img {
+    max-width: 90%;
+  }
+
+  #section-3 ul {
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+/* section contato */
+.contato {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 40px 5%;
+  max-width: 1440px;
+  margin: 40px auto;
+  border-radius: 8px;
+}
+
+.contato h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #b59b57;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-weight: 500;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
+}
+
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+form a {
+  color: #b59b57;
+  text-decoration: underline;
+}
+
+form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #b59b57;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #d8b867;
+}
+
+/* section informações */
+.informacoes {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 40px 5%;
+  max-width: 1440px;
+  margin: 0 auto 60px;
+  border-radius: 8px;
+}
+
+.informacoes h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #b59b57;
+}
+
+.informacoes p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.informacoes a {
+  color: #d8221a;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contato,
+  .informacoes {
+    padding: 20px;
+  }
+
+  .contato h2,
+  .informacoes h2 {
+    font-size: 24px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+  
+
+ /* css rodapé */
+ footer{
+     background-color: black;
+     color: #d8221a;
+     padding: 10px;
+     display: flex;
+ }
+  
+ #redes-sociais {
+     list-style: none;
+     display: flex;
+     gap: 15%;
+     justify-content: center;
+     background-color: #12151a;
+     padding: 30px;
+ }
+ 
+ #redes-sociais a {
+     text-decoration: none;
+     color: #b59b57;
+     margin-bottom: 20px;
+ }
+  
+ #footer {
+     justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+  
+ #footer img {
+     width: 70px;
+ }
